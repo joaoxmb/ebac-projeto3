@@ -1,4 +1,4 @@
-# Projeto 3
-Este é uma página estática de um Restaurante, realizado toda sua estrutura e funções com [Bootstrap](https://getbootstrap.com/).
+# Tarefa Projeto 3
+Landing Page releitura do site do [Bar do Cofre](https://www.subastor.com.br/subastorbardocofre) aplicando o conhecimento de Bootstrap Avançado.
 
-Aplicando conhecimentos adquiridos durante o módulo de Bootstrap avançado do Curso Ebac - Engenheiro Front-End.
+Desenvolvido para a tarefa do Módulo 14 do Curso Ebac Egenheiro Front-End. A tarefa é de tema livre, sendo obrigatório utilizar o Bootstrap.
