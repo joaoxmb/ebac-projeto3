@@ -1,4 +1,31 @@
 import {formValidation, formReset} from "./components/formValidation.js"
+import parallax from "./components/parallax.js"
+
+new parallax('.about-image', (element, progress) => {
+  element
+    .style = `
+      opacity: ${progress};
+    `
+})
+new parallax('.about-text', (element, progress) => {
+  const texts = element.querySelectorAll('p, h2, button')
+
+  texts.forEach((t, i) => {
+    t
+      .style = `
+        opacity: ${progress};
+        transform: translateY(${((i + 1) * 3) - (progress * ((i + 1) * 3))}rem);
+      `
+  })
+})
+
+document.querySelectorAll('#gallery img')
+  .forEach(img => {
+    new parallax(img, (element, progress) => {
+      element
+        .style = `opacity: ${progress} !important`
+    })
+  })
 
 // document.addEventListener("DOMContentLoaded", () => {
 //   const form = document.querySelector("#contact-form")
