@@ -1,5 +1,6 @@
 import {formValidation, formReset} from "./components/formValidation.js"
 import parallax from "./components/parallax.js"
+import "./components/openingHours.js"
 
 new parallax('.about-image', (element, progress) => {
   element
@@ -8,10 +9,28 @@ new parallax('.about-image', (element, progress) => {
     `
 })
 new parallax('.about-text', (element, progress) => {
-  const texts = element.querySelectorAll('p, h2, button')
+  const otherElements = element.querySelectorAll('p, h2, button')
 
-  texts.forEach((t, i) => {
-    t
+  otherElements.forEach((e, i) => {
+    e
+      .style = `
+        opacity: ${progress};
+        transform: translateY(${((i + 1) * 3) - (progress * ((i + 1) * 3))}rem);
+      `
+  })
+})
+
+new parallax('#location iframe', (element, progress) => {
+  element
+    .style = `opacity: ${progress * 0.7} !important;`
+})
+
+new parallax('#location .location-text', (element, progress) => {
+  const otherElements = document.querySelector('#location')
+    .querySelectorAll('address, #location .col-12 > p, h2, #opening-hours')
+
+  otherElements.forEach((e, i) => {
+    e
       .style = `
         opacity: ${progress};
         transform: translateY(${((i + 1) * 3) - (progress * ((i + 1) * 3))}rem);
