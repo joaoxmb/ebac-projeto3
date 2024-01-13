@@ -3,11 +3,13 @@ import parallax from "./components/parallax.js"
 import "./components/openingHours.js"
 
 new parallax('.about-image', (element, progress) => {
+  console.log(progress);
   element
     .style = `
       opacity: ${progress};
     `
 })
+
 new parallax('.about-text', (element, progress) => {
   const otherElements = element.querySelectorAll('p, h2, button')
 
@@ -18,6 +20,14 @@ new parallax('.about-text', (element, progress) => {
         transform: translateY(${((i + 1) * 3) - (progress * ((i + 1) * 3))}rem);
       `
   })
+}, 1.1)
+
+document.querySelectorAll('#gallery img')
+  .forEach(img => {
+    new parallax(img, (element, progress) => {
+      element
+        .style = `opacity: ${progress} !important`
+    }, 0.7)
 })
 
 new parallax('#location iframe', (element, progress) => {
@@ -38,13 +48,12 @@ new parallax('#location .location-text', (element, progress) => {
   })
 })
 
-document.querySelectorAll('#gallery img')
-  .forEach(img => {
-    new parallax(img, (element, progress) => {
-      element
-        .style = `opacity: ${progress} !important`
-    })
-  })
+new parallax('.menu-transition-image', (element, progress) => {
+  element
+    .style = `
+      opacity: ${progress};
+    `
+}, 0.8)
 
 // document.addEventListener("DOMContentLoaded", () => {
 //   const form = document.querySelector("#contact-form")
