@@ -68,7 +68,7 @@ section {
   border-radius: 0.2rem;
   color: var(--tertiary-color);
   text-transform: uppercase;
-  padding: 0.4rem 1.4rem;
+  padding: 0.8rem 1.4rem;
   font-weight: 500;
 }
 .btn > a {
@@ -216,14 +216,31 @@ header {
   color: var(--tertiary-md-color);
 }
 
-#contact form input, 
-#contact form textarea {
-  border: 1.3px solid var(--tertiary-color);
-  background-color: #ffffff2b !important;
-  color: var(--tertiary-md-color);
+#contact-form > * {
+  margin-bottom: 1.5rem;
+}
+#contact-form input, 
+#contact-form textarea,
+#contact-form select {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid var(--tertiary-md-color);
+  background-color: #ffffff11 !important;
+  color: var(--tertiary-color);
   box-shadow: none;
-  opacity: 0.5;
+  padding: 0.8rem 1rem;
   transition: all .3s;
+  border-radius: 0.1rem;
+}
+#contact-form select {
+  appearance: none;
+}
+#contact-form select::-ms-expand {
+  display: none;
+}
+#contact-form input::placeholder, 
+#contact-form textarea::placeholder{
+  color: var(--tertiary-md-color)
 }
 
 #contact form input[data-has-value="true"]:valid, 
@@ -241,22 +258,24 @@ header {
 }
 
 #contact form button {
+  color: var(--primary-color);
   background-color: var(--tertiary-color);
   border-color: var(--tertiary-color);
 }
 #contact form button:hover {
+  color: var(--tertiary-color);
   background-color: var(--secundary-color);
   border-color: var(--secundary-color);
 }
 
 @media screen and (max-width: 768px) {
-  #gallery > div {
-    column-count: 1;
+  #menu .tab-content ul{
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 769px) {
-  #menu .tab-content  ul{
+  #menu .tab-content ul{
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
