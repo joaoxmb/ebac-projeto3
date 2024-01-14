@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ebac Restaurante</title>
+  <title>Bar do Cofre</title>
+  <link rel="icon" type="image/x-icon" href="./images/brand.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="./main.css">
@@ -14,41 +15,41 @@
       <div class="navbar navbar-expand-lg px-3">
         <div class="navbar-brand">
           <a href="#" class="brand">
-            <img src="./images/brand.png" alt="Subastor Logo Marca" />
+            <img class="ms-3" src="./images/brand.png" alt="Subastor Logo Marca" />
           </a>
         </div>
-        <button type="button" class="navbar-toggler p-0" data-bs-toggle="collapse" data-bs-target="#nav">
+        <button type="button" class="navbar-toggler p-0 me-2" data-bs-toggle="collapse" data-bs-target="#nav">
           <i class="navbar-toggler-icon"></i>
         </button>
-        <nav id="nav" class="navbar-collapse collapse justify-content-lg-end">
-          <ul class="nav nav-pills d-block d-md-flex justify-content-md-center gap-4">
+        <nav id="nav" class="navbar-collapse collapse justify-content-lg-end me-lg-3">
+          <ul class="nav nav-pills d-block d-md-flex justify-content-md-center">
             <li class="nav-item">
-              <a href="#home" class="nav-link active">
+              <a href="#home" class="nav-link px-md-3 active">
                 Home
               </a>
             </li>
             <li class="nav-item">
-              <a href="#about" class="nav-link">
+              <a href="#about" class="nav-link px-md-3">
                 Sobre
               </a>
             </li>
             <li class="nav-item">
-              <a href="#gallery" class="nav-link">
+              <a href="#gallery" class="nav-link px-md-3">
                 Galeria de Fotos
               </a>
             </li>
             <li class="nav-item">
-              <a href="#location" class="nav-link">
+              <a href="#location" class="nav-link px-md-3">
                 Localização
               </a>
             </li>
             <li class="nav-item">
-              <a href="#menu" class="nav-link">
+              <a href="#menu" class="nav-link px-md-3">
                 Cardápio
               </a>
             </li>
             <li class="nav-item">
-              <a href="#contact" class="nav-link">
+              <a href="#contact" class="nav-link px-md-3">
                 Contato
               </a>
             </li>
@@ -79,10 +80,8 @@
     </section>
     <section id="about" class="position-relative">
       <div class="container section-gap">
-        <div class="row">
-          <div class="col-12 col-lg-6">
-            <img class="w-100 d-block rounded-3 about-image parallax" src="./images/drink3.jpeg" alt="Um de nosso pratos" />
-          </div>
+        <div class="row align-items-stretch">
+          <img class="col-12 col-lg-6 object-fit-cover rounded-3 about-image parallax" src="./images/drink3.jpeg" alt="Um de nosso pratos" />
           <div class="col-12 col-lg-6 pt-4 pt-lg-0 about-text">
             <h2 class="section-title mb-4 parallax">
               O Sub<span>astor</span> Bar do Cofre, no Farol Santander
@@ -97,12 +96,7 @@
               Sinta-se completamente seguro, vire a página e mergulhe numa experiência que você vai guardar para sempre.
             </p>
             <div class="d-flex gap-3 flex-wrap about-btns mt-4 parallax">
-              <button type="button" class="btn btn-secondary">
-                <a href="#">
-                  Conheça o Farol Santander
-                </a>
-              </button>
-              <button type="button" class="btn btn-primary">
+              <button type="button" class="btn btn-primary parallax">
                 <a href="#">
                   Reserve aqui
                 </a>
@@ -113,26 +107,24 @@
       </div>
     </section>
     <section id="gallery">
-      <div>
-        <img class="opacity-0 parallax" src="./images/drink.png" alt="Drink na frente do cofre" />
-        <img class="opacity-0 parallax" src="./images/drink2.jpeg" alt="" />
-        <img class="opacity-0 parallax" src="./images/drink4.jpeg" alt="" />
-        <img class="opacity-0 parallax" src="./images/vault2.jpeg" alt="" />
-        <img class="opacity-0 parallax" src="./images/drinks-and-foods.jpeg" alt="" />
-        <img class="opacity-0 parallax" src="./images/drink5.jpeg" alt="" />
-        <img class="opacity-0 parallax" src="./images/drink-and-food2.jpeg" alt="" />
+      <div class="image-gallery">
+        <img class="item opacity-0 parallax" src="./images/drink.png" alt="Drink"/>
+        <img class="item opacity-0 parallax" src="./images/drink2.jpeg" alt="Drink"/>
+        <img class="item opacity-0 parallax" src="./images/drink4.jpeg" alt="Drink"/>
+        <img class="item opacity-0 parallax" src="./images/vault2.jpeg" alt="Cofre"/>
+        <img class="item opacity-0 parallax" src="./images/drinks-and-foods.jpeg" alt="Drinks e Comidas"/>
+        <img class="item opacity-0 parallax" src="./images/drink5.jpeg" alt="Drink"/>
+        <img class="item opacity-0 parallax" src="./images/drink-and-food2.jpeg" alt="Comidas"/>
       </div>
     </section>
     <section id="location">
       <div class="container section-gap">
-        <div class="row flex-column-reverse flex-lg-row">
+        <div class="row">
           <div class="col-12 col-lg-6">
-            <div class="ratio ratio-4x3">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6333542127268!2d-46.63660552582572!3d-23.545686061014237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5855009a948d%3A0xd1203c2a6f62b6a9!2sFarol%20Santander!5e0!3m2!1spt-BR!2sbr!4v1705080406826!5m2!1spt-BR!2sbr" class="border-0 w-100 opacity-0 rounded-3 parallax" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6333542127268!2d-46.63660552582572!3d-23.545686061014237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5855009a948d%3A0xd1203c2a6f62b6a9!2sFarol%20Santander!5e0!3m2!1spt-BR!2sbr!4v1705080406826!5m2!1spt-BR!2sbr" class="location-maps border-0 opacity-0 w-100 h-100 parallax" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div class="col-12 col-lg-6 location-text">
-            <h2 class="section-title parallax">Localização</h2>
+            <h2 class="section-title parallax pt-5 pt-lg-0">Localização</h2>
             <address class="fs-5 fw-bold parallax">
               R. João Brícola, 24 - Centro Histórico de São Paulo, São Paulo - SP
             </address>
@@ -145,14 +137,14 @@
       </div>
     </section>
     <section id="menu">
-      <div class="menu-transition-image overflow-hidden parallax">
+      <div class="menu-transition-image overflow-hidden parallax mb-5">
         <img src="./images/drinks-and-foods.jpeg" alt="Comidas do bar" />
       </div>
-      <div class="container section-gap pt-5">
-        <div class="row mb-4">
+      <div class="container section-gap pt-5 pb-0">
+        <div class="row mb-5">
           <nav class="nav nav-tabs justify-content-center">
-            <button type="button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#menu-coqueteis">Coquetéis</button>
-            <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-comidas">Comidas</button>
+            <button type="button" class="nav-link active text-uppercase fs-4" data-bs-toggle="tab" data-bs-target="#menu-coqueteis">Coquetéis</button>
+            <button type="button" class="nav-link text-uppercase fs-4" data-bs-toggle="tab" data-bs-target="#menu-comidas">Comidas</button>
           </nav>
         </div>
         <div class="row">
@@ -332,11 +324,12 @@
       </div>
     </section>
     <section id="contact">
-      <div class="container">
+      <div class="container section-gap">
         <div class="row align-items-stretch">
-          <img class="col-12 col-md-6 rounded-3 object-fit-cover" src="./images/drink4.jpeg" alt="Um de nossos drinks" />
+          <img class="col-12 col-md-6 rounded-3 object-fit-cover" src="./images/drink4.jpeg" alt="Um de nossos drinks"/>
           <div class="col-12 col-md-6">
-            <h2 class="section-title mb-4">Contato</h2>
+            <h2 class="mb-4 pt-5 pt-md-0 section-title white-text">Formulário de Contato</h2>
+            <p>Não fazemos reservas através deste formulário de contato, caso queira fazer uma reserva <a href="#">clique aqui</a>.</p>
             <form id="contact-form">
               <input type="text" id="fullName" class="form-control" placeholder="Nome Completo" required/>
               <input type="email" id="email" class="form-control" placeholder="E-mail" required/>
@@ -377,19 +370,19 @@
   </div>
 
   <footer>
-    <div class="container-lg section-gap pb-4">
+    <div class="container-lg pb-4">
       <div class="p-3">
         <div class="row align-items-center">
-          <a href="#" class="brand col-12 col-md-4">
+          <a href="#" class="brand col-12 col-md-4 d-flex justify-content-center justify-content-md-start">
             <img src="./images/brand.png" alt="Subastor Logo Marca" />
           </a>
-          <p class="col-12 col-md-4 m-0 text-center">
+          <p class="col-12 col-md-4 m-0 text-center my-3 my-md-0">
             Created By            
             <a href="https://github.com/joaoxmb">
-              @joaoxmb
+              @Joaoxmb
             </a>
           </p>
-          <ul class="developer-social list-unstyled d-flex justify-content-end align-items-center m-0 gap-3 col-12 col-md-4">
+          <ul class="developer-social list-unstyled d-flex justify-content-center justify-content-md-end align-items-center m-0 gap-3 col-12 col-md-4">
             <li class="fs-4">
               <a href="https://github.com/joaoxmb">
                 <i class="bi bi-github"></i>

@@ -52,6 +52,7 @@ new parallax('.menu-transition-image', (element, progress) => {
   element
     .style = `
       opacity: ${progress};
+      transform: translateY(${5 - (progress * 5)}rem)
     `
 }, 0.8)
 
