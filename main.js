@@ -1,3 +1,7 @@
+import "./lib/jquery.v3.7.1.min.js";
+import "./lib/jquery.mask.v0.9.0.min.js";
+import "./lib/bootstrap.bundle.v5.3.2.min.js";
+
 import {formValidation, formReset} from "./components/formValidation.js"
 import parallax from "./components/parallax.js"
 import "./components/openingHours.js"
