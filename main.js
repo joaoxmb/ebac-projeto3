@@ -107,4 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
           .style = `opacity: ${progress} !important`
       }, 0.7)
   })
+
+  // Warning Modal
+  new bootstrap.Modal('#warning-modal').show()
 })
