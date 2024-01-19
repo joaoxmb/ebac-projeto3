@@ -71,15 +71,15 @@ document.addEventListener("DOMContentLoaded", () => {
   new parallax('.about-image', (element, progress) => {
     element
       .style = `
-        opacity: ${progress};
+        opacity: ${progress} !important;
       `
   })
   new parallax('.about-text', (element, progress) => {
     element.querySelectorAll('p, h2, button')
       .forEach((e, i) => {
         e.style = `
-          opacity: ${progress};
-          transform: translateY(${((i + 1) * 3) - (progress * ((i + 1) * 3))}rem);
+          opacity: ${progress} !important;
+          transform: translateY(${((i + 1) * 3) - (progress * ((i + 1) * 3))}rem) !important;
         `
       })
   }, 1.1)
@@ -88,16 +88,16 @@ document.addEventListener("DOMContentLoaded", () => {
       .querySelectorAll('address, #location .col-12 > p, h2, #opening-hours')
       .forEach((e, i) => {
         e.style = `
-            opacity: ${progress};
-            transform: translateY(${((i + 1) * 3) - (progress * ((i + 1) * 3))}rem);
+            opacity: ${progress} !important;
+            transform: translateY(${((i + 1) * 3) - (progress * ((i + 1) * 3))}rem) !important;
           `
       })
   })
   new parallax('.menu-transition-image', (element, progress) => {
     element
       .style = `
-        opacity: ${progress};
-        transform: translateY(${5 - (progress * 5)}rem)
+        opacity: ${progress} !important;
+        transform: translateY(${5 - (progress * 5)}rem) !important;
       `
   }, 0.8)
   new parallax('#location iframe', (element, progress) => {
